@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="location_description">To Provide you with the best dining experience, we need your permission to access your device location.\n By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure seamless food delivery Experience.</string>
+    <string name="explore_your_favourite_food">Explore Your Favourite Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
