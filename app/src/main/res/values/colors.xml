@@ -6,4 +6,6 @@
     <color name="green">#1FC57A</color>
     <color name="startColor">#53E88B</color>
     <color name="endColor">#15BF7A</color>
+    <color name="colorPrimary">#890620</color>
+    <color name="colorSecondary">#660115</color>
 </resources>

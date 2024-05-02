@@ -23,7 +23,7 @@
             android:layout_gravity="center">
 
             <TextView
-                android:id="@+id/addToCart"
+                android:id="@+id/menuAddToCart"
                 android:layout_width="90sp"
                 android:layout_height="22dp"
                 android:text="@string/add_to_cart"
@@ -31,12 +31,12 @@
                 android:textColor="@color/white"
                 android:background="@drawable/addtocartshape"
                 android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="@+id/pricePopular"
-                app:layout_constraintStart_toStartOf="@+id/pricePopular"
-                app:layout_constraintTop_toBottomOf="@+id/pricePopular" />
+                app:layout_constraintEnd_toEndOf="@+id/foodPopularPrice"
+                app:layout_constraintStart_toStartOf="@+id/foodPopularPrice"
+                app:layout_constraintTop_toBottomOf="@+id/foodPopularPrice" />
 
             <ImageView
-                android:id="@+id/popularFoodImage"
+                android:id="@+id/foodPopularImage"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
                 android:layout_marginStart="10dp"
@@ -47,7 +47,7 @@
                 app:srcCompat="@drawable/menu1" />
 
             <TextView
-                android:id="@+id/foodNamePopular"
+                android:id="@+id/popularFoodName"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
@@ -55,12 +55,12 @@
                 android:text="@string/food_name"
                 android:textSize="16sp"
                 android:fontFamily="@font/yeonsung"
-                app:layout_constraintBottom_toBottomOf="@+id/popularFoodImage"
-                app:layout_constraintStart_toEndOf="@+id/popularFoodImage"
-                app:layout_constraintTop_toTopOf="@+id/popularFoodImage" />
+                app:layout_constraintBottom_toBottomOf="@+id/foodPopularImage"
+                app:layout_constraintStart_toEndOf="@+id/foodPopularImage"
+                app:layout_constraintTop_toTopOf="@+id/foodPopularImage" />
 
             <TextView
-                android:id="@+id/pricePopular"
+                android:id="@+id/foodPopularPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_5"
@@ -70,7 +70,7 @@
                 android:textColor="@color/textColor"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/foodNamePopular"
+                app:layout_constraintStart_toEndOf="@+id/popularFoodName"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

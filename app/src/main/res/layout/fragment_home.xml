@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
 
     <TextView
-        android:id="@+id/tviewMenu"
+        android:id="@+id/viewMenu"
         android:layout_width="120dp"
         android:textAlignment="center"
         android:gravity="center"
