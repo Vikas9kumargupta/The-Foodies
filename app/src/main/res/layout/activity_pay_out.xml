@@ -12,6 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="vertical">
         <ImageButton
             android:id="@+id/buttonBack"
@@ -57,11 +58,11 @@
                 android:layout_marginStart="4dp"
                 android:layout_height="wrap_content"
                 android:text="Name"
+                android:textSize="16sp"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="100dp" />
 
             <EditText
-                android:id="@+id/editTextText"
                 android:layout_width="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginStart="16dp"
@@ -83,8 +84,10 @@
                 android:layout_width="70dp"
                 android:paddingLeft="8dp"
                 android:layout_marginStart="4dp"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="Address"
+                android:textSize="16sp"
                 />
 
             <EditText
@@ -93,8 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginVertical="5dp"
                 android:ems="10"
                 android:inputType="textMultiLine"
                 android:hint="Address" />
@@ -117,6 +119,8 @@
                 android:layout_marginStart="4dp"
                 android:layout_height="wrap_content"
                 android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="100dp" />
 
@@ -126,13 +130,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
+                android:textSize="16sp"
+                android:inputType="number"
                 android:textColor="@color/black"
-                android:hint="+916334567890" />
+                android:hint="6334567890" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="64dp"
             android:gravity="center_vertical"
             android:layout_marginTop="16dp"
             android:background="@drawable/edittextshape"
@@ -142,18 +148,20 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:paddingLeft="8dp"
                 android:layout_marginStart="4dp"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="Payment Method"
                 android:fontFamily="@font/yeonsung"
-                android:textSize="16sp" />
+                android:textSize="17sp" />
 
             <ImageView
                 android:layout_width="250dp"
                 android:layout_marginStart="70dp"
-                android:layout_gravity="end"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginVertical="5dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cashondelivery"
                 android:layout_weight="1"
@@ -178,6 +186,8 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="8dp"
                 android:text="Total Amout"
+                android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

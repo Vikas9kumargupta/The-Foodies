@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Fragment.SearchFragment">
 
@@ -11,7 +12,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="12dp"
+        android:layout_marginVertical="14dp"
         android:textColor="#35B435"
         android:text="Search Your Favourite Food"
         android:fontFamily="@font/yeonsung"
@@ -25,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="14dp"
         android:background="@drawable/searchshape"
         android:elevation="8dp"
         android:iconifiedByDefault="false"

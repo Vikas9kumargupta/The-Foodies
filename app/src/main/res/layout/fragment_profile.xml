@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Fragment.ProfileFragment">
 
     <RelativeLayout
@@ -14,7 +15,7 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userImg"
-            android:layout_width="145dp"
+            android:layout_width="155dp"
             android:layout_height="145dp"
             android:layout_centerInParent="true"
             android:src="@drawable/menu1" />

@@ -17,9 +17,12 @@ class PayOutActivity : AppCompatActivity() {
         binding = ActivityPayOutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.buttonBack.setOnClickListener{
+            finish()
+        }
         binding.placeMyOrderButton.setOnClickListener {
             val bottomSheetDialog = CongratsBottomSheet()
-
+            bottomSheetDialog.show(supportFragmentManager,"True")
         }
     }
 }

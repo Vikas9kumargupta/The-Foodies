@@ -4,12 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailsActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backButton"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
@@ -26,10 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Food Name"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/yeonsung"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -56,9 +59,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Short Description"
+        android:textColor="@color/black"
+        android:fontFamily="@font/yeonsung"
         android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        android:layout_marginStart="8dp"
+        android:textSize="24sp"
+        android:layout_marginStart="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
@@ -66,11 +71,12 @@
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
         android:layout_marginTop="8dp"
+        android:text="Lorem ipsumdolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,Ut enim ad"
         android:textSize="14dp"
-        android:text="Lorem ipsumdolor sit amet, consectetur adipiscing elit, sed do\neiusmod tempor incididunt ut labore et dolore magna aliqua,Ut\nenim ad"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -78,9 +84,11 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
-        android:textSize="20sp"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/black"
+        android:textSize="22sp"
         android:text="Ingredients"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
@@ -90,12 +98,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
         android:text="1 item\n2 item\n3 item"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/addtocartshape"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="22dp"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:fontFamily="@font/yeonsung"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
